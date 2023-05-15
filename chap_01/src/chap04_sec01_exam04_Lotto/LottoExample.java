@@ -13,9 +13,11 @@ public class LottoExample {
 				}
 			}
 		}
+
+		
 		for (int i = 0; i < lotto.length-1; i++) { // 보너스 번호를 제외한 6 숫자를 오름차순으로 정렬하는 코드
-			for (int j = 0; j < i; j++) {
-				if(lotto[i] < lotto[j]) {
+			for (int j = 0; j < i; j++) { // Swop 굉장히 많이 사용하는 알고리즘
+				if(lotto[i] < lotto[j]) { 
 					int temp = lotto[i];
 					lotto[i] = lotto[j];
 					lotto[j] = temp;
